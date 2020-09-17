@@ -11,7 +11,7 @@ class NetUrls {
   static final baseUrl = "http://keduo.y.jc-test.cn/";
   static final loginUrl = "client/Login"; //登录接口
   static final getVerifyCodeUrl = "client/getVerifyCode"; //获取验证码
-  static final registerUrl = "client/register"; //注册
+  static final registerUrl = "client/register/user"; //注册
   static final changePasswordUrl = "client/user/changePassword"; //修改密码接口
   static final templatelistUrl = "client/template/lists"; //模版列表
   static final templateSetDefaultUrl = "client/template/setDefault"; //设置默认模版
