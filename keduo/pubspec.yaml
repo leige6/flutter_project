@@ -1,0 +1,166 @@
+name: keduo
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  provider: ^4.3.1
+  #flutter_svg: ^0.17.4
+  flutter_scan: 0.0.1
+  #本地存储 相当于iOS的UserDefaults 安卓的SharedPreferences
+  shared_preferences: ^0.5.4+3
+  #加载web网页
+  webview_flutter: ^0.3.19+7
+  #广告轮播图
+  flutter_swiper: ^1.1.6
+  #缓存网络图片
+  cached_network_image: ^1.0.0
+  #toast
+  fluttertoast: ^7.0.2
+  flutter_plugin_android_lifecycle:
+  #侧滑删除
+  flutter_slidable: "^0.5.5"
+  #下拉刷新
+  #flutter_easyrefresh_extend: ^2.1.6
+  flutter_easyrefresh: ^2.1.5
+  #网络请求库
+  dio: ^3.0.4
+  #list分组库
+  group_list_view: ^1.0.6
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/icons/ic_login_user.png
+    - assets/images/icons/ic_login_pass.png
+    - assets/images/icons/ic_clear.png
+    - assets/images/icons/ic_eye.png
+    - assets/images/icons/baifangrenwu.png
+    - assets/images/icons/banzhengzhinan.png
+    - assets/images/icons/biaogexiazai.png
+    - assets/images/icons/changguishangpin.png
+    - assets/images/icons/ic_hister.png
+    - assets/images/icons/gengduogonggao.png
+    - assets/images/icons/gongzuodongtai.png
+    - assets/images/icons/guanggaoye.png
+    - assets/images/icons/jiagezilv.png
+    - assets/images/icons/jiaqianshenling.png
+    - assets/images/icons/mendianguanli.png
+    - assets/images/icons/shangpinliebiao.png
+    - assets/images/icons/shangpinshangchuan.png
+    - assets/images/icons/tongjifenxi.png
+    - assets/images/icons/weilianjie.png
+    - assets/images/icons/yijianjie.png
+    - assets/images/icons/zixungonggao.png
+    - assets/images/icons/fanhui.png
+    - assets/images/icons/ic_back.png
+    - assets/images/icons/ic_bluetooth.png
+    - assets/images/icons/xiangxidizhi.png
+    - assets/images/icons/ic_edit_scan.png
+    - assets/images/icons/ic_pull_down.png
+    - assets/images/icons/ic_filter.png
+    - assets/images/icons/ic_choose.png
+    - assets/images/icons/ic_edit_search.png
+    - assets/images/icons/quxiaoshuru.png
+    - assets/images/icons/chankanshangping.png
+    - assets/images/icons/sousuomendian.png
+    - assets/images/icons/ic_item_print.png
+    - assets/images/icons/ic_item_store.png
+    - assets/images/icons/ic_list_scan.png
+    - assets/images/icons/ic_to_store_list.png
+    - assets/images/icons/ic_to_folder_list.png
+    - assets/images/icons/ic_slide_delete.png
+    - assets/images/icons/ic_fold_delect.png
+    - assets/images/icons/ic_fold_edit.png
+    - assets/images/icons/ic_fold_add.png
+    - assets/images/icons/ic_history_select.png
+    - assets/images/icons/ic_history_unselect.png
+    - assets/images/icons/ic_history_remove.png
+    - assets/images/icons/ic_history_print.png
+    - assets/images/icons/ic_home.png
+    - assets/images/icons/ic_home_select.png
+    - assets/images/icons/ic_mine_select.png
+    - assets/images/icons/ic_mine.png
+    - assets/images/icons/ic_search.png
+    - assets/images/icons/ic_user_bg.png
+    - assets/images/icons/ic_login_bg.png
+    - assets/images/icons/ic_logo.png
+    - assets/images/icons/ic_user.png
+    - assets/images/icons/ic_mine_bg.png
+    - assets/images/icons/ic_mine_print.png
+    - assets/images/icons/ic_mine_stand.png
+    - assets/images/icons/ic_mine_pw.png
+    - assets/images/icons/ic_mine_set.png
+    - assets/images/icons/ic_mine_version.png
+    - assets/images/icons/ic_mine_next.png
+    - assets/images/icons/ic_home_bg.png
+    - assets/images/icons/ic_main_statistics.png
+    - assets/images/icons/ic_main_list.png
+    - assets/images/icons/ic_main_next.png
+    - assets/images/icons/ic_main_history.png
+    - assets/images/icons/ic_main_no.png
+    - assets/images/icons/ic_nonetwork.png
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
